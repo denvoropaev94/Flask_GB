@@ -10,6 +10,10 @@ app = Flask(__name__)
 def root():
     return render_template('home.html')
 
+@app.get('/about/')
+def about():
+    return 'HOME WORK 1'
+
 
 @app.get('/shoes/')
 def shoes():
