@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Students list
+{% endblock %}
+
+{% block content %}
+<h1>Students list</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Возраст</th>
+            <th>Средний балл</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for student in students %}
+            <tr>
+                <td>{{ student.name }}</td>
+                <td>{{ student.surname }}</td>
+                <td>{{ student.age }}</td>
+                <td>{{ student.avg_mark }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

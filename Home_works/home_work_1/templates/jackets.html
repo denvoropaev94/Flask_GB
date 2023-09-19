@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Jackets
+{% endblock %}
+
+{% block content %}
+<h1>Jackets page</h1>
+
+{% for item in jackets %}
+    <div class="card hover-a mb-4">
+        <div class="card-body">
+            <h2 class="card-title">{{ item.type }}</h2>
+            <h4 class="card-title">Price - {{ item.price }}</h4>
+            <div class="card-text small text-muted">{{ item.year_issue }}</div>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

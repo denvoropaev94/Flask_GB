@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<div class="row">
+    <h1>Список пользователей из БД</h1>
+    {% for user in users %}
+        <div>
+            <h2>{{ user.name }}</h2>
+            <p>{{ user.mail }}</p>
+            <p>{{ user.phone }}</p>
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>
