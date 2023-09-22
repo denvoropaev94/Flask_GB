@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h1>Супер-калькулятор!</h1>
+    <form method="post">
+        <label for="num1">Число 1:</label>
+        <input class = "form-control" type="number" id="num1" name="num1" required>
+        <br>
+        <label for= "num2">Число 2:</label>
+        <input class = "form-control" type="number" id="num2" name="num2" required>
+        <br>
+        <label for="operation">Операция: </label>
+        <select id="operation" name="operation">
+            <option value= "add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+    </select>
+    <input class = 'btn btn-primary' type="submit" value= "Отправить">
+    </form>
+</body>
+</html>
